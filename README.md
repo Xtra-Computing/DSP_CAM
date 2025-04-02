@@ -21,6 +21,16 @@ This project implements a **Configurable DSP-Based Content Addressable Memory (C
 
 ## Project Structure
 
+Project structure
+
+DSP_CAM/
+├── CAMUnit/                 # The CAM unit design and CAM block design, together with the testing project files
+├── TriangleCount/           # The triangle counting application with our CAM unit and user-defined kernels
+├── common/                  # The common folder for a Vitis project
+├── figure/                  # Repository figures
+├── CONTRIBUTING.md
+└── README.md
+
 The project comprises two main parts:
 
 1. **CAM Unit Customization** (`CAMUnit`): Contains `cam_block` and `cam_unit` designs.
