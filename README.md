@@ -23,6 +23,7 @@ This project implements a **Configurable DSP-Based Content Addressable Memory (C
 
 Project structure
 
+```
 DSP_CAM/
 ├── CAMUnit/                 # The CAM unit design and CAM block design, together with the testing project files
 ├── TriangleCount/           # The triangle counting application with our CAM unit and user-defined kernels
@@ -30,6 +31,7 @@ DSP_CAM/
 ├── figure/                  # Repository figures
 ├── CONTRIBUTING.md
 └── README.md
+```
 
 The project comprises two main parts:
 
