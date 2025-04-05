@@ -217,3 +217,22 @@ We welcome contributions!
 - Submit a pull request following the guidelines in [`CONTRIBUTING.md`](./CONTRIBUTING.md).
 
 Thank you for contributing!
+
+## 📄 Citation
+
+If you find this work useful in your research, please consider citing our paper:
+
+> **Yao Chen, Feng Yu, Di Wu, Weng-Fai Wong, and Bingsheng He.**  
+> *Configurable DSP-Based CAM Architecture for Data-Intensive Applications on FPGAs*.  
+> In Proceedings of the 62nd Design Automation Conference (DAC), 2025.
+
+### BibTeX
+```bibtex
+@inproceedings{dsp_cam,
+  title={Configurable DSP-Based CAM Architecture for Data-Intensive Applications on FPGAs},
+  author={Chen Yao, Feng Yu, Di Wu, Bingsheng He, Weng-fai Wong},
+  booktitle={Proceedings of the 62nd Design Automation Conference (DAC)},
+  year={2025},
+  organization={ACM/IEEE}
+}
+
