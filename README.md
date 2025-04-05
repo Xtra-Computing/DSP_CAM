@@ -138,17 +138,22 @@ Source files: `./TriangleCount`
 
 ### Running the Triangle Counting Example
 
-0. **Environment & Dataset Preparation**:
+0. **Dataset Preparation & Environment Setup**:
 
-Datasets download: [Google Drive Link](https://drive.google.com/drive/folders/10qyk-ASlPxW-PwoP_6kM_AAGgDlgJRGb?usp=drive_link)
+You can download the datasets used in our paper directly from this [Google Drive Link](https://drive.google.com/drive/folders/10qyk-ASlPxW-PwoP_6kM_AAGgDlgJRGb?usp=drive_link). If you would like to apply our accelerator to other graph datasets, please use the dataset generation script:
 
+```bash
+python ./dataset/partition_tc.py
+```
+This script converts the original CSR (Compressed Sparse Row) format into the following three files (edge_list.txt, csr_col.txt, csr_row_2.txt). To ensure compatibility with the CAM architecture, the script includes a **virtual node generation** method that prevents adjacency list lengths from exceeding the CAM size. More details can be found directly in the script.
+
+Set up the environment:
 ```bash
 source /opt/xilinx/xrt/setup.sh
 source /YOUR_PATH/Vitis/2021.2/settings64.sh  # Update with your Vitis path
-
-# Ensure dataset files (edge_list.txt, csr_col.txt, csr_row_2.txt) are in ./TriangleCount/dataset/
-# Dataset generation script: ./dataset/partition_tc.py
 ```
+
+
 
 1. **Compile the Triangle Counting Application:**
 
@@ -156,6 +161,7 @@ source /YOUR_PATH/Vitis/2021.2/settings64.sh  # Update with your Vitis path
 cd ./TriangleCount
 make all TARGET=hw_emu PLATFORM=<platform_path>
 ```
+We also provide the compiled bitstream and host executable (for U250 FPGA, TARGET=hw) in this [Google Drive Link](https://drive.google.com/drive/folders/10qyk-ASlPxW-PwoP_6kM_AAGgDlgJRGb?usp=drive_link).
 
 2. **Run in Hardware Emulation Mode:**
 
@@ -230,7 +236,7 @@ If you find this work useful in your research, please consider citing our paper:
 ```bibtex
 @inproceedings{dsp_cam,
   title={Configurable DSP-Based CAM Architecture for Data-Intensive Applications on FPGAs},
-  author={Chen Yao, Feng Yu, Di Wu, Bingsheng He, Weng-fai Wong},
+  author={Yao Chen, Feng Yu, Di Wu, Bingsheng He, Weng-fai Wong},
   booktitle={Proceedings of the 62nd Design Automation Conference (DAC)},
   year={2025},
   organization={ACM/IEEE}
