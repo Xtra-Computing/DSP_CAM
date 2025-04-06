@@ -140,7 +140,7 @@ Source files: `./TriangleCount`
 
 0. **Dataset Preparation & Environment Setup**:
 
-You can download the datasets used in our paper directly from this [Google Drive Link](https://drive.google.com/drive/folders/10qyk-ASlPxW-PwoP_6kM_AAGgDlgJRGb?usp=drive_link). If you would like to apply our accelerator to other graph datasets, please use the dataset generation script:
+You can download the datasets used in our paper directly from this [Google Drive Link](https://drive.google.com/drive/folders/10qyk-ASlPxW-PwoP_6kM_AAGgDlgJRGb?usp=drive_link). If you would like to apply our accelerator to other graph datasets, please use the dataset preprocessing script:
 
 ```bash
 python ./dataset/partition_tc.py
