@@ -236,9 +236,10 @@ If you find this work useful in your research, please consider citing our paper:
 ```bibtex
 @inproceedings{dsp_cam,
   title={Configurable DSP-Based CAM Architecture for Data-Intensive Applications on FPGAs},
-  author={Yao Chen, Feng Yu, Di Wu, Bingsheng He, Weng-fai Wong},
+  author={Yao Chen, Feng Yu, Di Wu, Weng-fai Wong and Bingsheng He},
   booktitle={Proceedings of the 62nd Design Automation Conference (DAC)},
   year={2025},
   organization={ACM/IEEE}
 }
+```
 
